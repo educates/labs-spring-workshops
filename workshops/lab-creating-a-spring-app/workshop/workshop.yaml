@@ -1,0 +1,12 @@
+name: Creating a Spring Boot application
+
+modules:
+    activate:
+        - workshop-overview
+        - setup-environment
+        - exercises/01-using-start-spring-io
+        - exercises/02-creating-the-application
+        - exercises/03-adding-application-code
+        - exercises/04-running-the-application
+        - exercises/05-testing-the-application
+        - workshop-summary

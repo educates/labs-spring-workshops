@@ -1,0 +1,20 @@
+modules:
+  workshop-overview:
+    name: Workshop Overview
+    exit_sign: Setup Environment
+  setup-environment:
+    name: Setup Environment
+    exit_sign: Start Workshop
+  exercises/01-using-start-spring-io:
+    name: Using start.spring.io
+  exercises/02-creating-the-application:
+    name: Creating the Application
+  exercises/03-adding-application-code:
+    name: Adding Application Code
+  exercises/04-running-the-application:
+    name: Running the Application
+  exercises/05-testing-the-application:
+    name: Testing the Application
+  workshop-summary:
+    name: Workshop Summary
+    exit_sign: Finish Workshop
