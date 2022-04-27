@@ -12,7 +12,12 @@ all: publish-workshops deploy-workshops
 publish-lab-creating-a-spring-app-workshop:
 	imgpkg push -i $(REGISTRY)/$(PORTAL_NAME)/lab-creating-a-spring-app-files:latest -f workshops/lab-creating-a-spring-app
 
-publish-workshops: publish-lab-creating-a-spring-app-workshop
+publish-lab-containerizing-spring-workshop:
+	imgpkg push -i $(REGISTRY)/$(PORTAL_NAME)/lab-containerizing-spring-files:latest -f workshops/lab-containerizing-spring
+
+publish-workshops: \
+  publish-lab-creating-a-spring-app-workshop \
+  publish-lab-containerizing-spring-workshop
 
 # Use the "deploy-workshops" target to deploy the workshop to your Kubernetes
 # cluster. This will wait for the deployment of the training portal to be
@@ -21,7 +26,8 @@ publish-workshops: publish-lab-creating-a-spring-app-workshop
 .PHONY: resources/workshops.yaml
 
 resources/workshops.yaml:
-	ytt -f workshops/lab-creating-a-spring-app/resources/workshop.yaml > $@
+	ytt -f workshops/lab-creating-a-spring-app/resources/workshop.yaml \
+	    -f workshops/lab-containerizing-spring/resources/workshop.yaml > $@
 
 deploy-workshops: resources/workshops.yaml
 	kubectl apply -f resources/workshops.yaml

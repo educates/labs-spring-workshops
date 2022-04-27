@@ -5,7 +5,6 @@ In this case the Apache Tomcat Server is running in the workshop environment. To
 access the application and verify it is working you can instead use the
 following URL.
 
-
 ```dashboard:create-dashboard
 name: Demo
 url: https://demo-{{session_namespace}}.{{ingress_domain}}/hello

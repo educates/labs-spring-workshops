@@ -77,3 +77,34 @@ spec:
           port: 8080
           protocol: TCP
           targetPort: 8080
+---
+apiVersion: training.educates.dev/v1beta1
+kind: Workshop
+metadata:
+  name: lab-containerizing-spring
+spec:
+  title: Containerizing a Spring Boot application
+  description: A workshop describing how to run a Spring Boot application in docker.
+  workshop:
+    image: jdk11-environment:*
+    files:
+    - image:
+        url: $(image_repository)/labs-spring-quickstarts/lab-containerizing-spring-files:latest
+      includePaths:
+      - /workshop/**
+  session:
+    resources:
+      memory: 1Gi
+    patches:
+      automountServiceAccountToken: false
+    applications:
+      terminal:
+        enabled: true
+        layout: split
+      editor:
+        enabled: true
+      docker:
+        enabled: true
+    ingresses:
+    - name: demo
+      port: 8080
