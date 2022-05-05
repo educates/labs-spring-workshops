@@ -8,6 +8,9 @@ spec:
       type: anonymous
     updates:
       workshop: true
+    sessions:
+      maximum: 1
+    reserved: 0
   workshops:
   - name: lab-creating-a-spring-app
     capacity: 1

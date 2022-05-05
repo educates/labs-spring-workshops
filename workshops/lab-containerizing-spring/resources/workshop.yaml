@@ -9,9 +9,10 @@ spec:
     image: jdk11-environment:*
     files:
     - image:
-        url: $(image_repository)/labs-spring-quickstarts/lab-containerizing-spring-files:latest
+        url: $(image_repository)/labs-spring-quickstarts-files:latest
       includePaths:
-      - /workshop/**
+      - /workshops/lab-containerizing-spring/workshop/**
+      newRootPath: workshops/lab-containerizing-spring
   session:
     resources:
       memory: 1Gi
