@@ -1,4 +1,4 @@
-PORTAL_NAME = labs-spring-quickstarts
+PORTAL_NAME = labs-spring-workshops
 REGISTRY = localhost:5001
 
 # Use the default "all" target the first time you want to deploy the workshop.

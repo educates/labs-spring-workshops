@@ -1,5 +1,5 @@
-Spring Quickstarts
-==================
+Spring Workshops
+================
 
 A series of workshops for getting started with Spring.
 

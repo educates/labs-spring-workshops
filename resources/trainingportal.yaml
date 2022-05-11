@@ -1,7 +1,7 @@
 apiVersion: training.educates.dev/v1beta1
 kind: TrainingPortal
 metadata:
-  name: labs-spring-quickstarts
+  name: labs-spring-workshops
 spec:
   portal:
     registration:

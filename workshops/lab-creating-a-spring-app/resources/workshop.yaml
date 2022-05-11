@@ -9,7 +9,7 @@ spec:
     image: jdk11-environment:*
     files:
     - image:
-        url: $(image_repository)/labs-spring-quickstarts-files:latest
+        url: $(image_repository)/labs-spring-workshops-files:latest
       includePaths:
       - /workshops/lab-creating-a-spring-app/workshop/**
       newRootPath: workshops/lab-creating-a-spring-app
