@@ -10,7 +10,7 @@ If you want to review the configuration for the application on the
 start.spring.io web site you can use the URL:
 
 ```dashboard:open-url
-url: https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.6.7&packaging=jar&jvmVersion=11&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&dependencies=web
+url: https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.1&packaging=jar&jvmVersion=17&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&dependencies=web
 ```
 
 In addition to adding the Spring Web dependency we have modified the demo

@@ -6,7 +6,7 @@ spec:
   title: Containerizing a Spring Boot application
   description: A workshop describing how to run a Spring Boot application in docker.
   workshop:
-    image: jdk11-environment:*
+    image: jdk17-environment:*
     files:
     - image:
         url: $(image_repository)/labs-spring-workshops-files:latest

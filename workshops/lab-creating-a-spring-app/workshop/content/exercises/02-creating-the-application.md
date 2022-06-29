@@ -10,9 +10,11 @@ Select the **Initializr** tab in the workshop session dashboard.
 name: Initializr
 ```
 
-For this workshop leave in place the defaults for all the Java language and
-project metadata fields on Spring Initializr as the workshop is scripted to
-expect the project name to be `demo`.
+For this workshop environment you must ensure Java 17 is selected under the
+project metadata on Spring Initializr.
+
+You can leave as is the other defaults for the project metadata as the workshop
+is scripted to already expect the project name to be `demo`.
 
 Now click on **Add Dependencies**, search for and add the following
 dependencies:

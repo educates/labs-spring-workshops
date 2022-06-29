@@ -6,7 +6,7 @@ spec:
   title: Creating a Spring Boot application
   description: A workshop introducing the start.spring.io web site.
   workshop:
-    image: jdk11-environment:*
+    image: jdk17-environment:*
     files:
     - image:
         url: $(image_repository)/labs-spring-workshops-files:latest

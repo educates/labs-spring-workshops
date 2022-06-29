@@ -34,5 +34,5 @@ The startup messages should include the banner:
  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v2.6.7)
+ :: Spring Boot ::                (v2.7.1)
 ```
