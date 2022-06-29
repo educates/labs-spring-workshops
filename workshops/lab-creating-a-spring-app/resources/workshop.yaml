@@ -19,8 +19,10 @@ spec:
   session:
     resources:
       memory: 1Gi
-    patches:
-      automountServiceAccountToken: false
+    namespaces:
+      security:
+        token:
+          enabled: false
     applications:
       terminal:
         enabled: true
