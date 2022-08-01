@@ -11,3 +11,7 @@ Workshops included are:
 
 * [lab-containerizing-spring](workshops/lab-containerizing-spring) - A workshop
   describing how to containerize a Spring Boot application and run it in docker.
+
+* [lab-spring-boot-on-k8s](workshops/lab-spring-boot-on-k8s) - A workshop which
+  steps through creating a Spring Boot application, containerizing it, and
+  deploying it to Kubernetes.
