@@ -9,14 +9,14 @@ spec:
     image: jdk17-environment:*
     files:
     - image:
-        url: ghcr.io/vmware-tanzu-labs/lab-spring-boot-on-k8s-files:4.0
+        url: $(image_repository)/lab-spring-boot-on-k8s-files:$(workshop_version)
       includePaths:
       - /workshop/**
       - /exercises/**
       - /README.md
     - path: .m2
       image:
-        url: ghcr.io/vmware-tanzu-labs/lab-spring-boot-on-k8s-maven:latest
+        url: ghcr.io/educates/lab-spring-boot-on-k8s-maven:latest
   session:
     namespaces:
       budget: large

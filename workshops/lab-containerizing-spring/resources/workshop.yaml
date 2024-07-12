@@ -9,7 +9,7 @@ spec:
     image: jdk17-environment:*
     files:
     - image:
-        url: $(image_repository)/labs-spring-workshops-files:latest
+        url: $(image_repository)/labs-spring-workshops-files:$(workshop_version)
       includePaths:
       - /workshops/lab-containerizing-spring/workshop/**
       newRootPath: workshops/lab-containerizing-spring

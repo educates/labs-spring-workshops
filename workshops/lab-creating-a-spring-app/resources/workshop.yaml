@@ -9,13 +9,13 @@ spec:
     image: jdk17-environment:*
     files:
     - image:
-        url: $(image_repository)/labs-spring-workshops-files:latest
+        url: $(image_repository)/labs-spring-workshops-files:$(workshop_version)
       includePaths:
       - /workshops/lab-creating-a-spring-app/workshop/**
       newRootPath: workshops/lab-creating-a-spring-app
     - path: .m2
       image:
-        url: ghcr.io/vmware-tanzu-labs/lab-spring-boot-on-k8s-maven:latest
+        url: ghcr.io/educates/lab-spring-boot-on-k8s-maven:latest
   session:
     resources:
       memory: 1Gi
