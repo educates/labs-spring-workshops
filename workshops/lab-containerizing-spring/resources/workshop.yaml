@@ -5,13 +5,17 @@ metadata:
 spec:
   title: Containerizing a Spring Boot application
   description: A workshop describing how to run a Spring Boot application in docker.
+  publish:
+    image: $(image_repository)/lab-containerizing-spring-files:$(workshop_version)
   workshop:
     image: jdk17-environment:*
     files:
     - image:
-        url: $(image_repository)/labs-spring-workshops-files:$(workshop_version)
+        url: $(image_repository)/lab-containerizing-spring-files:$(workshop_version)
       includePaths:
-      - /workshops/lab-containerizing-spring/workshop/**
+      - /workshop/**
+      - /exercises/**
+      - /README.md
       newRootPath: workshops/lab-containerizing-spring
   session:
     resources:

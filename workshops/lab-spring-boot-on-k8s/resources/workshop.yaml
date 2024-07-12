@@ -5,6 +5,8 @@ metadata:
 spec:
   title: Spring Boot on Kubernetes
   description: Introduction to Spring Boot on Kubernetes
+  publish:
+    image: $(image_repository)/lab-spring-boot-on-k8s-files:$(workshop_version)
   workshop:
     image: jdk17-environment:*
     files:

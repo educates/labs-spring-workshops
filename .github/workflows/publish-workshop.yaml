@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Carvel tools
         shell: bash
@@ -27,9 +27,7 @@ jobs:
       - name: Install Educates CLI
         shell: bash
         run: |
-          # curl -Lo /usr/local/bin/educates https://github.com/vmware-tanzu-labs/educates-training-platform/releases/download/2.6.0/educates-linux-amd64
-          # chmod +x /usr/local/bin/educates
-          imgpkg pull -i ghcr.io/vmware-tanzu-labs/educates-client-programs:2.6.0 -o /tmp/client-programs
+          imgpkg pull -i ghcr.io/vmware-tanzu-labs/educates-client-programs:2.7.2 -o /tmp/client-programs
           mv /tmp/client-programs/educates-linux-amd64 /usr/local/bin/educates
 
       - name: Setup repository variables and release details

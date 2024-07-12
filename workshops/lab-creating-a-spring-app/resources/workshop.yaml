@@ -5,14 +5,17 @@ metadata:
 spec:
   title: Creating a Spring Boot application
   description: A workshop introducing the start.spring.io web site.
+  publish:
+    image: $(image_repository)/labs-creating-a-spring-app-files:$(workshop_version)
   workshop:
     image: jdk17-environment:*
     files:
     - image:
-        url: $(image_repository)/labs-spring-workshops-files:$(workshop_version)
+        url: $(image_repository)/labs-creating-a-spring-app-files:$(workshop_version)
       includePaths:
-      - /workshops/lab-creating-a-spring-app/workshop/**
-      newRootPath: workshops/lab-creating-a-spring-app
+      - /workshop/**
+      - /exercises/**
+      - /README.md
     - path: .m2
       image:
         url: ghcr.io/educates/lab-spring-boot-on-k8s-maven:latest
